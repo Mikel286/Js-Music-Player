@@ -4,18 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
+    <link rel="stylesheet" href="config/style.css">
 </head>
 <body>
     <header>
         <h1>Cross M.P</h1>
-        <h2>My personal music player</h2>
+        <h3>My personal music player</h2>
     </header>
 
     <main>
         <p>Reproduce your music</p>
-        <audio id="player" controls></audio>
+        <div id="buttons">
+            <button id="previous">&#9198;&#xFE0E;</button>
+            <button id="play">&#9654;</button>
+            <button id="next">&#9197;&#xFE0E;</button>
+        </div>
+        <audio id="audio"></audio>
         <ul id="list"></ul>
     </main>
-    
+    <script src="config/script.js"></script>
 </body>
 </html>
